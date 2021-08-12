@@ -1,18 +1,77 @@
+/* BASE */
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-.background-image {
+.body {
     font-family: 'Gilroy';
-    background-color: #0B1D26;
     background-image: url("./../img/background/background-main.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-color: #0B1D26;
+    color: #fff;
 }
 
-.test {
-    width: 600px;
-    height: 3200px;
+.container-wide {
+    width: 1790px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* HEADER */
+
+
+.header {
+    padding-top: 65px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li + li {
+    margin-left: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav a:hover {
+    border-bottom: 1px solid #FBD784;
+    color: #FBD784;
+    transition: .3s ease-in;
+}
+
+.account {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.account:hover {
+    color: #FBD784;
+    transition: .3s ease-in;
 }
