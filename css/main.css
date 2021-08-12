@@ -7,14 +7,14 @@
 .body {
     font-family: 'Gilroy';
     background-image: url("./../img/background/background-main.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #0B1D26;
     color: #fff;
 }
 
 .container-wide {
-    width: 1790px;
+    max-width: 1790px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -109,7 +109,98 @@
     transform: translateY(-50%);
 }
 
+.nav-button {
+    border: none;
+    height: 25px;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    display: none;
+    position: relative;
+    z-index: 9;
+}
 
+.nav-button:focus,
+.nav-button:active {
+    outline: none;
+}
+
+.nav-button-icon {
+    display: block;
+    position: relative;
+    width: 42px;
+    height: 5px;
+    border: none;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    display: block;
+    width: 42px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    display: block;
+    width: 42px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-button-close .nav-button-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    padding: 170px 70px 50px 15px;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.mobile-nav .nav,
+.mobile-nav .account {
+    display: block;
+}
+
+.mobile-nav .nav ul {
+    flex-direction: column;
+}
+
+.mobile-nav .nav ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
 /* HERO */
 
 .hero {
