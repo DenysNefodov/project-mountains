@@ -1,14 +1,20 @@
-/* .header, */ .main, .footer {
+/* .header, */ /* .main,  */.footer {
     display: none;
 }
 
-.hero {
-    display: none;
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 68px;
+    }
 }
 
 @media (max-width: 800px) {
     .nav, .account {
         display: none;
+    }
+
+    .nav-wrapper {
+        margin-bottom: 90px;
     }
 
     .logo {
@@ -22,5 +28,18 @@
 
     .mobile-nav-active {
         display: flex;
+    }
+
+    .hero-category {
+        font-size: 14px;
+        padding-left: 64px;
+    }
+
+    .hero-category::before {
+        width: 42px;
+    }
+
+    .hero-title {
+        font-size: 38px;
     }
 }
