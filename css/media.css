@@ -1,14 +1,43 @@
-/* .header, */ /* .main,  */.footer {
+.footer {
     display: none;
 }
 
+@media (max-width: 1600px) {
+
+    .header {
+        padding-bottom: 250px;
+    }
+}
+
 @media (max-width: 1200px) {
+
     .hero-title {
         font-size: 68px;
+    }
+
+    .article-text::before {
+        width: 140px;
+        height: 140px;
+        font-size: 140px;
+    }
+
+    .article-text {
+        padding-left: 50px;
+        max-width: 50%;
+        margin-right: 0;
+    }
+
+    .article-img {
+        width: 45%;
     }
 }
 
 @media (max-width: 800px) {
+
+    .header {
+        padding-bottom: 200px;
+    }
+
     .nav, .account {
         display: none;
     }
@@ -41,5 +70,28 @@
 
     .hero-title {
         font-size: 38px;
+    }
+
+    .arcticle-title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .article,
+    .article:nth-child(even) {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+    }
+
+    .article-text {
+        max-width: 100%;
+    }
+
+    .article-img {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 75px;
     }
 }
