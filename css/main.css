@@ -87,10 +87,6 @@
     transform: translateY(-50%);
 }
 
-.account:hover {
-    color: #FBD784;
-    transition: .3s ease-in;
-}
 
 /* HERO */
 
@@ -161,4 +157,110 @@
     top: 50%;
     transform: translateY(-50%);
     background-image: url('./../img/icons/icons_arrow_down.svg');
+}
+
+/* MAIN */
+
+
+.main-container {
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ARTICLE */
+
+.article {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.article-text {
+    padding-left: 150px;
+    max-width: 782px;
+    position: relative;
+}
+
+.article-text::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    display: block;
+    content: attr(data-number);
+    width: 240px;
+    height: 240px;
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 1;
+    opacity: .1;
+}
+
+.article-subtitle {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 96px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+
+.article-subtitle::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+}
+
+.arcticle-title {
+    max-width: 555px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 27px;
+}
+
+.article-descr {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 27px;
+}
+
+.arcticle-read-more {
+    display: inline-block;
+    position: relative;
+    padding-right: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.222;
+    color: #FBD784;
+}
+
+.arcticle-read-more::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./../img/icons/icons_arrow_right.svg');
 }
