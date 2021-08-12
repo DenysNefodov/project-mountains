@@ -29,6 +29,7 @@
 .row {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
 .logo {
@@ -58,7 +59,6 @@
 }
 
 .nav a:hover {
-    border-bottom: 1px solid #FBD784;
     color: #FBD784;
     transition: .3s ease-in;
 }
