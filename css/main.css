@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .body {
@@ -11,6 +13,10 @@
     background-repeat: no-repeat;
     background-color: #0B1D26;
     color: #fff;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .container-wide {
@@ -179,13 +185,13 @@
     right: 0;
     width: 320px;
     height: 100%;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(34, 31, 31, 0.7);
     padding: 170px 70px 50px 15px;
     display: none;
     /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
-
+    z-index: 8;
 }
 
 .mobile-nav .nav,

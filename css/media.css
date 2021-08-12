@@ -1,7 +1,3 @@
-.footer {
-    display: none;
-}
-
 @media (max-width: 1600px) {
 
     .header {
@@ -29,6 +25,22 @@
 
     .article-img {
         width: 45%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer-nav + .footer-nav {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:920px) {
+    .footer-row {
+        flex-direction: column-reverse;
+    }
+
+    .footer-nav-wrapper {
+        margin-bottom: 80px;
     }
 }
 
@@ -69,7 +81,8 @@
     }
 
     .hero-title {
-        font-size: 38px;
+        font-size: 48px;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, .6);
     }
 
     .arcticle-title {
@@ -83,6 +96,7 @@
     .article:nth-child(even) {
         flex-direction: column-reverse;
         margin-bottom: 100px;
+        align-items: flex-start;
     }
 
     .article-text {
@@ -90,8 +104,23 @@
     }
 
     .article-img {
-        max-width: 100%;
+        max-width: 320px;
         width: 100%;
         margin-bottom: 75px;
+    }
+}
+
+@media (max-width:560px) {
+    .footer-nav-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-nav + .footer-nav {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 44px;
     }
 }
