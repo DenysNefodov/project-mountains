@@ -24,6 +24,7 @@
 
 .header {
     padding-top: 65px;
+    padding-bottom: 845px;
 }
 
 .row {
@@ -31,6 +32,7 @@
     justify-content: space-between;
     align-items:center;
 }
+
 
 .logo {
     font-family: 'Playfair Display';
@@ -64,14 +66,99 @@
 }
 
 .account {
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-size: 17px;
     font-weight: 600;
     line-height: 21px;
+    padding-left: 32px;
+}
+
+.account::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("./../img/icons/icons_account.svg");
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .account:hover {
     color: #FBD784;
     transition: .3s ease-in;
+}
+
+/* HERO */
+
+.hero {
+    display: block;
+    margin-top: 200px;
+    text-decoration: none;
+    color: #fff;
+    max-width: 980px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .6s cubic-bezier(0.530, -0.600, 0.460, 1.650);
+}
+
+.hero:hover {
+    transform: translateY(-5%);
+}
+
+.hero-category {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 104px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+
+.hero-category::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+}
+
+.hero-title {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 1.136;
+    text-transform: capitalize;
+}
+
+.hero-scroll {
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.222;
+}
+
+.hero-scroll::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 24px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./../img/icons/icons_arrow_down.svg');
 }
